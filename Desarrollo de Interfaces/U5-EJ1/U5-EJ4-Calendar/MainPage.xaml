@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="U5_EJ4_Calendar.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Label Text="Introduzca su fecha de entrada: "/>
+            <DatePicker x:Name="StartDate" DateSelected="DateSelected" Format="dd-MM-yyyy"/>
+            <Label Text="Introduzca su fecha de salida: "/>
+            <DatePicker x:Name="EndDate" DateSelected="DateSelected" Format="dd-MM-yyyy" BindingContext="{x:Reference StartDate}" MinimumDate="{Binding Date}"/>
+            <Label x:Name="lblDays" 
+             Text="Total day/s: "
+             TextColor="Red"
+             FontSize="20"/>
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
