@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AppCalculadora</string>
+    <string name="titulo">CALCULADORA</string>
+    <string name="primFact">Primer Factor:</string>
+    <string name="SegFact">Segundo Factor:</string>
+    <string name="res">Resultado:</string>
+    <string name="btnAcceder">Acceder</string>
+    <string name="usuario">Usuario:</string>
+    <string name="contrasena">Contraseña:</string>
+</resources>

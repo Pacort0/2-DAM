@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/fondo"
+    android:padding="40dp"
+    tools:context=".CalculadoraActivity">
+
+    <Button
+        android:id="@+id/btnAtras"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:text="Atrás"
+        android:textSize="21sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/intrDatos"
+        android:layout_width="248dp"
+        android:layout_height="356dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.458">
+
+        <TextView
+            android:id="@+id/Calculadora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp"
+            android:text="@string/titulo"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/primerFactor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/primFact"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/campoPrimerFact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="8"
+            android:gravity="center"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/segundoFactor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/SegFact"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/campoSegundoFact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="8"
+            android:gravity="center"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/res"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/campoResultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:textSize="20sp" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/intrDatos">
+
+        <Button
+            android:id="@+id/btnSuma"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/btnResta"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/btnMultiplicacion"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="X"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/btnDivision"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="%"
+            android:textSize="25sp" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.constraintlayout.widget.ConstraintLayout>
