@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="U5_EJ3_Binding.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Label Text="TwoWay" FontSize="Large"/>
+            <Entry x:Name="entry1" FontSize="Body"/>
+            <Entry x:Name="entry2" BindingContext="{x:Reference entry1}" Text="{Binding Text, Mode=TwoWay}" FontSize="Body" />
+            <Label Text="OneWay" FontSize="Large"/>
+            <Entry x:Name="entry3" FontSize="Body"/>
+            <Entry x:Name="entry4" BindingContext="{x:Reference entry3}" Text="{Binding Text, Mode=OneWay}" FontSize="Body" />
+            <Label Text="OneTime" FontSize="Large"/>
+            <Entry x:Name="entry5" FontSize="Body" Text="Esto ya venía escrito"/>
+            <Entry x:Name="entry6" BindingContext="{x:Reference entry5}" Text="{Binding Text, Mode=OneTime}" FontSize="Body" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+    
+</ContentPage>
