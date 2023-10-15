@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/mesablanca">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Las Siete y Media"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/linearLayout"/>
+
+<LinearLayout
+    android:id="@+id/linearLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent">
+
+    <TextView
+        android:id="@+id/introJug1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jugador1, Introduzca su nombre: "
+        android:textStyle="bold"
+        android:textSize="22sp"/>
+    <EditText
+        android:id="@+id/campoJug1"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:ems="16"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:inputType="textPersonName"/>
+    <TextView
+        android:layout_marginTop="30dp"
+        android:id="@+id/introJug2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jugador2, Introduzca su nombre: "
+        android:textStyle="bold"
+        android:textSize="22sp"/>
+    <EditText
+        android:id="@+id/campoJug2"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:ems="16"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:inputType="textPersonName"/>
+
+</LinearLayout>
+
+    <Button
+        android:id="@+id/btnEmpezar"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:text="Empezar partida"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="20sp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

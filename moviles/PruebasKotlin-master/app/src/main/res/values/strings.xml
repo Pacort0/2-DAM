@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Prueba</string>
+    <string name="miguelon">Migue cr7 loverboy</string>
+    <string name="BTN1">Pulsa aquí</string>
+    <string name="ejemploVistas">Ejemplo de vistas</string>
+    <string name="miNombre">Francisco</string>
+    <string name="volver">Volver</string>
+</resources>
