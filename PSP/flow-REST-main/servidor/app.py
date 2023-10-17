@@ -69,6 +69,7 @@ def modifyCountry(id):
                     country[element] = newCountry[element]
                 # Devolvemos el país como diccionario junto al código 200
                 return country, 200
+            return {"error":"No se encuentra el país brodel"}, 404
     # Si la petición no cumple con el formato JSON, devuelve un mensaje y código de error
     return {"error":"METE UN JASON NINIOOO"}, 415
 
