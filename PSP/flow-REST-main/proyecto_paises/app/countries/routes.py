@@ -1,5 +1,5 @@
-from flask import Blueprint, jsonify, request
-from app.funciones import leeFichero, escribeFichero
+from flask import *
+from app.funciones import *
 from app.funciones import _find_next_id
 
 countriesBP = Blueprint("countries", __name__)
